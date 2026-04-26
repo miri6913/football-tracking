@@ -24,12 +24,15 @@ End-to-end football (soccer) video analysis — player/ball detection, multi-obj
 ## Demo
 
 ### Pipeline 1 — Player & Goalkeeper Tracking
+![Pipeline 1 screenshot](screenshots/players_detection.jpg)
 <video src="players_detection.mp4" controls width="100%"></video>
 
 ### Pipeline 2 — Ball Tracking & Possession Detection
+![Pipeline 2 screenshot](screenshots/ball_tracking.jpg)
 <video src="ball_tracking.mp4" controls width="100%"></video>
 
 ### Pipeline 3 — Full Integration
+![Pipeline 3 screenshot](screenshots/players_ball_tracking.jpg)
 <video src="players_ball_tracking.mp4" controls width="100%"></video>
 
 ---
