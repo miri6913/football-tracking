@@ -2,6 +2,13 @@
 
 End-to-end football (soccer) video analysis — player/ball detection, multi-object tracking, possession detection, and interactive segmentation — running on GPU.
 
+![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=flat&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.2+-EE4C2C?style=flat&logo=pytorch&logoColor=white)
+![CUDA](https://img.shields.io/badge/CUDA-12.x-76B900?style=flat&logo=nvidia&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-4.8+-5C3EE8?style=flat&logo=opencv&logoColor=white)
+![Gradio](https://img.shields.io/badge/Gradio-3.39+-FF7C00?style=flat&logo=gradio&logoColor=white)
+![YOLOv5](https://img.shields.io/badge/YOLOv5-custom--trained-00BFFF?style=flat)
+
 ---
 
 ## Features
@@ -11,6 +18,19 @@ End-to-end football (soccer) video analysis — player/ball detection, multi-obj
 - **Ball possession detection** based on player-ball proximity
 - **Annotated video export** with per-class colour coding and tracker-ID labels
 - **Interactive segmentation & tracking** via Track-Anything (SAM + XMem) with a Gradio UI
+
+---
+
+## Demo
+
+### Pipeline 1 — Player & Goalkeeper Tracking
+<video src="players_detection.mp4" controls width="100%"></video>
+
+### Pipeline 2 — Ball Tracking & Possession Detection
+<video src="ball_tracking.mp4" controls width="100%"></video>
+
+### Pipeline 3 — Full Integration
+<video src="players_ball_tracking.mp4" controls width="100%"></video>
 
 ---
 
@@ -149,13 +169,3 @@ The app starts at `http://127.0.0.1:7860` and prints a public 72-hour share link
 | Gradio UI | Gradio 3.39 |
 | Computer vision | OpenCV 4.8 |
 | ML framework | PyTorch 2.2+ |
-
----
-
-## Sample Outputs
-
-| File | Description |
-|------|-------------|
-| `players_detection.mp4` | Players and goalkeepers with coloured ellipses and ByteTrack IDs |
-| `ball_tracking.mp4` | Ball location marker + red triangle above the player in possession |
-| `players_ball_tracking.mp4` | Full pipeline — all object classes, tracker IDs, and possession marker |
